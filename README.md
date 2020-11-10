@@ -11,7 +11,7 @@ Your task is to create an app that displays a list of restaurants for users, alo
 
 ## Specifications
 Each restaurant should have the following details
-- Name of restaurant
+- Name of restaurant (e.g. Arnold's Chicken)
 - Location of restaurant (this can be a string or an object storing address details)
 - Cuisine types (this should be an array of cuisines i.e. a restaurant can have multiple cuisine types)
 - Owner (e.g. Ebere)
