@@ -4,7 +4,7 @@
 node, express, mongoose, mongodb
 
 ## Setup Instructions
-- Clone and fork this repo
+- Fork and clone this repo
 
 ## Objective
 Your task is to create an app that displays a list of restaurants for users, along with location and cuisine types.
