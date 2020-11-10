@@ -7,7 +7,7 @@ node, express, mongoose, mongodb
 ## Objective
 Your task is to create an app that displays a list of restaurants for users, along with location and cuisine types.
 
-## Specs
+## Specifications
 Each restaurant should have the following details
 - Name of restaurant
 - Location of restaurant (this can be a string or an object storing address details)
