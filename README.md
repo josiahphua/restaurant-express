@@ -17,12 +17,14 @@ Each restaurant should have the following details
 - Owner (e.g. Ebere)
 
 ## Part 1
-Create routes and displays for restaurants
-- Show all resturants
-- Show 1 restaurant
-- Create new restaurant
-- Edit restaurant details
-- Delete a restaurant
+- Set up npm, node, dotenv, express, ejs and your gitignore file
+- Create the mongoose model for restaurants 
+- Create routes and displays for restaurants
+  - Show all resturants
+  - Show 1 restaurant
+  - Create new restaurant
+  - Edit restaurant details
+  - Delete a restaurant
 
 ## Further
 - Allow users to add/remove cuisines from the restaurants
