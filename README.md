@@ -17,7 +17,8 @@ Each restaurant should have the following details
 - Owner (e.g. Ebere)
 
 ## Part 1
-- Set up npm, node, dotenv, express, ejs and your gitignore file
+- Set up npm, dotenv, express, ejs and your gitignore file
+- Set up the connection to mongodb
 - Create the mongoose model for restaurants 
 - Create routes and displays for restaurants
   - Show all resturants
