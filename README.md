@@ -29,6 +29,7 @@ Each restaurant should have the following details
 
 ## Further
 - Allow users to add/remove cuisines from the restaurants
+- Style the app with a framework of your choice! or just CSS
 
 ## Submission
 Submit a pull request once you've completed Part 1
