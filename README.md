@@ -27,5 +27,6 @@ Create routes and displays for restaurants
 ## Further
 - Allow users to add/remove cuisines from the restaurants
 
-
+## Submission
+Submit a pull request once you've completed Part 1
 
