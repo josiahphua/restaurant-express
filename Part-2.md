@@ -10,10 +10,12 @@
         - Allow users to add/remove cuisines from each restaurant
 - Create a seed file for your restaurants and cuisines
 
-## Further
+## Further (Optional)
 - Add other data features to your restaurant 
 - Examples
     - suitable_for: large groups, dates, family, kids
     - promos: 1-for-1, 20% off total bill, free dessert, set-lunch
     - dishes: nasi lemak, ramen, bagels
 
+## Submission
+Submit a pull request once Part 2 is complete.
