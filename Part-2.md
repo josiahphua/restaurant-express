@@ -6,7 +6,7 @@
 - Refactor the restaurants model to have cuisines as a separate model
     - Restaurant should contain an array of cuisines objects
     - Updates routes and views to cater for the new cuisines model
-        - Allow users to "CRUD" individual cuisines
+        - Allow users to CREATE/READ/UPDATE/DELETE individual cuisines
         - Allow users to add/remove cuisines from each restaurant
 - Create a seed file for your restaurants and cuisines
 
