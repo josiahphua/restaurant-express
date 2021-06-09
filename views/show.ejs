@@ -1,0 +1,12 @@
+<div>
+    <h1>Restaurant Deeets</h1>
+    <div>
+        <h4><%= restaurant.name %></h4>
+        <p>Address: <%= restaurant.address %> , <%= restaurant.location %></p>
+        <p>Chef: <%= restaurant.owner %></p>
+        <p>Cuisines:<% restaurant.cuisines.forEach(cuisine =>{%>
+                        <%= cuisine.name %>
+                    <% }) %></p>
+        <a href="/">Go back?</a>
+    </div>
+</div>

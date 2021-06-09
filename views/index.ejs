@@ -1,0 +1,86 @@
+<div>
+
+    <div>
+        <h2>Restaurants in DB.</h2>
+        <% restaurants.forEach(restaurant =>{%>
+            <div>
+
+            Name: <%= restaurant.name %> 
+            <br />
+            Address:<%= restaurant.location%> , <%= restaurant.address%>
+            <br />
+            Chef : <%= restaurant.chef%>
+            <br />
+            Cuisine(s): <% restaurant.cuisines.forEach(cuisine =>{%>
+            <%= cuisine.name %>
+        <% }) %>
+            </div>
+        <div>
+            <div>
+                <form action="/show/<%= restaurant._id %>">
+                    <button type="submit">Show</button>
+                </form>
+            </div>
+            <div>
+                <form action="/edit/<%= restaurant._id %>">
+                    <button type="submit">Edit</button>
+                </form>
+            </div>
+                <form method="post" action="/delete/<%= restaurant._id %>?_method=DELETE">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+            <% }) %>
+    </div>
+
+    <hr />
+
+    <div>
+        <h3>Add cuisines here</h3>
+        <form action="/cuisine/create?_method=PUT" method="post">
+            <label>Name of Cuisine</label>
+            <input name="name" />
+            <button>Add Cuisine</button>
+        </form>
+        <h3>Cuisines</h3>
+        <div>
+            <ul>
+                <% cuisines.forEach(cuisine =>{%>
+                    <li><%= cuisine.name %></li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <h3>Add restaurant here</h3>
+        <form action="/create" method="post">
+            <div>
+                <label>Name of Restaurant</label>
+                <input name="name" />
+            </div>
+            <div>
+                <label>Address</label>
+                <input name="address" />
+            </div>
+            <div>
+                <label>Location</label>
+                <input name="location" />
+            </div>
+            <div>
+                <label>Owner</label>
+                <input name="owner" />
+            </div>
+            <div>
+                <label>cuisines</label>
+                <% cuisines.forEach(cuisine =>{%>
+                    <input name="cuisines" value="<%= cuisine._id %>" type="checkbox"/><%= cuisine.name %>
+                <% }) %>
+
+            </div>
+            <button>Add Restaurant</button>
+        </form>
+
+
+    </div>
+</div>

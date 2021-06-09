@@ -1,0 +1,35 @@
+<form method="post"  action="/edit/<%= restaurant._id%>?_method=PUT" >
+    <div>
+        <label>Name of Restaurant</label>
+        <input type="text" name="name" placeholder="Name of Restaurant" value="<%= restaurant.name %>">
+    </div>
+        <div>
+        <label>Address</label>
+        <input type="text" name="address" placeholder="Address" value="<%= restaurant.address %>">
+    
+    </div>
+        <div>
+        <label>Location</label>
+        <input type="text" name="location" placeholder="Location" value="<%= restaurant.location %>">
+    
+    </div>
+        <div>
+        <label>Chef</label>
+        <input type="text" name="chef" placeholder="Chef" value="<%= restaurant.chef %>">
+    
+    </div>
+        <div>
+        <label>cuisines</label>
+        <% restaurant.cuisines.forEach(cuisine =>{%>
+            <%= cuisine.name %>
+        <% }) %>
+    </div>
+        <div>
+            <% cuisines.forEach(cuisine =>{%>
+                <input name="cuisines" value="<%= cuisine._id %>" type="checkbox"/>
+                <%= cuisine.name %>
+            <% }) %>
+
+        </div>
+        <button type="submit">Edit Restaurant</button>
+    </form>
